@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime'lar Dunyosi 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATSIYA -->
+    <header class="header">
+        <a href="#" class="logo">🌸 Anime'lar Dunyosi</a>
+
+        <nav class="navbar">
+            <a href="#home">Bosh Sahifa</a>
+            <a href="#anime">Top Anime'lar</a>
+            <a href="#reviews">Tomosha qilganlarim</a>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Anime qidirish...">
+            <button onclick="searchAnime()">🔍</button>
+        </div>
+
+        <select class="language" aria-label="Tilni tanlash"
+                onchange="changeLanguage(this.value)">
+            <option value="uz">🇺🇿 Uzbekcha</option>
+            <option value="ru">🇷🇺 Ruscha</option>
+            <option value="en">🇬🇧 Inglizcha</option>
+        </select>
+    </header>
+
+    <!-- BOSH SAHIFA -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">🌸 Xush kelibsiz, anime muxlislari!</p>
+
+            <h1>Anime'lar Dunyosi! 🎌🍿</h1>
+
+            <p>
+                Sevimli animelaringizni kashf eting, qiziqarli
+                sarguzashtlarga qo‘shiling va sevimli qahramonlaringiz
+                bilan unutilmas lahzalarni boshdan kechiring!
+            </p>
+
+            <a href="#anime" class="main-button">
+                Anime'larni ko‘rish ✨
+            </a>
+        </div>
+    </section>
+
+    <!-- TOP ANIMELAR -->
+    <section class="anime-section" id="anime">
+
+        <h2>🌟 Bizning Top Anime'larimiz</h2>
+
+        <p class="section-description">
+            Sevimli anime olamingni tanla!
+        </p>
+
+        <div class="anime-container">
+
+            <!-- MY HERO ACADEMIA -->
+            <article class="anime-card">
+                <div class="anime-cover mha">
+                    <span>💥</span>
+                    <h3>My Hero Academia</h3>
+                </div>
+
+                <div class="anime-info">
+                    <h3>Boku No Hero Academia</h3>
+
+                    <p>
+                        Super kuchlar, hayajonli janglar va kuchli
+                        qahramonlar haqidagi anime!
+                    </p>
+
+                    <p class="characters">
+                        Deku • Bakugo • Todoroki
+                    </p>
+
+                    <a href="#mha" class="watch-button">
+                        Tomosha Qilish
+                    </a>
+                </div>
+            </article>
+
+            <!-- JUJUTSU KAISEN -->
+            <article class="anime-card">
+                <div class="anime-cover jjk">
+                    <span>👹</span>
+                    <h3>Jujutsu Kaisen</h3>
+                </div>
+
+                <div class="anime-info">
+                    <h3>Jujutsu Kaisen</h3>
+
+                    <p>
+                        La'natlar, sehrli kuchlar va hayajonli
+                        janglarga boy anime!
+                    </p>
+
+                    <p class="characters">
+                        Yuji • Megumi • Gojo
+                    </p>
+
+                    <a href="#jjk" class="watch-button">
+                        Tomosha Qilish
+                    </a>
+                </div>
+            </article>
+
+            <!-- DEMON SLAYER -->
+            <article class="anime-card">
+                <div class="anime-cover kny">
+                    <span>⚔️</span>
+                    <h3>Kimetsu No Yaiba</h3>
+                </div>
+
+                <div class="anime-info">
+                    <h3>Kimetsu No Yaiba</h3>
+
+                    <p>
+                        Tanjiro va uning do‘stlarining
+                        unutilmas sarguzashtlari!
+                    </p>
+
+                    <p class="characters">
+                        Tanjiro • Nezuko • Rengoku
+                    </p>
+
+                    <a href="#kny" class="watch-button">
+                        Tomosha Qilish
+                    </a>
+                </div>
+            </article>
+
+            <!-- ONE PIECE -->
+            <article class="anime-card">
+                <div class="anime-cover one-piece">
+                    <span>🏴‍☠️</span>
+                    <h3>One Piece</h3>
+                </div>
+
+                <div class="anime-info">
+                    <h3>One Piece</h3>
+
+                    <p>
+                        Luffy va uning jamoasi eng buyuk xazinani
+                        topish uchun dengizlarni kezadi!
+                    </p>
+
+                    <p class="characters">
+                        Luffy • Zoro • Nami
+                    </p>
+
+                    <a href="#onepiece" class="watch-button">
+                        Tomosha Qilish
+                    </a>
+                </div>
+            </article>
+
+            <!-- NARUTO -->
+            <article class="anime-card">
+                <div class="anime-cover naruto">
+                    <span>🍥</span>
+                    <h3>Naruto Shippuden</h3>
+                </div>
+
+                <div class="anime-info">
+                    <h3>Naruto Shippuden</h3>
+
+                    <p>
+                        Naruto o‘z orzusiga erishish va do‘stlarini
+                        himoya qilish uchun kurashadi!
+                    </p>
+
+                    <p class="characters">
+                        Naruto • Sasuke • Kakashi
+                    </p>
+
+                    <a href="#naruto" class="watch-button">
+                        Tomosha Qilish
+                    </a>
+                </div>
+            </article>
+
+            <!-- SPY X FAMILY -->
+            <article class="anime-card">
+                <div class="anime-cover spy">
+                    <span>🕵🏻‍♂️</span>
+                    <h3>SPY×FAMILY</h3>
+                </div>
+
+                <div class="anime-info">
+                    <h3>SPY×FAMILY</h3>
+
+                    <p>
+                        Josuslik, kulgili voqealar va sirli
+                        sarguzashtlarga boy anime!
+                    </p>
+
+                    <p class="characters">
+                        Loid • Yor • Anya
+                    </p>
+
+                    <a href="#spy" class="watch-button">
+                        Tomosha Qilish
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- TOMOSHABINLAR FIKRLARI -->
+    <section class="reviews-section" id="reviews">
+
+        <h2>💬 Tomoshabinlar fikrlari ✨</h2>
+
+        <p class="section-description">
+            Anime muxlislarining sevimli qahramonlari!
+        </p>
+
+        <div class="reviews-container">
+
+            <article class="review-card">
+                <div class="avatar">🌸</div>
+                <h3>Jessie</h3>
+                <p class="favorite">Sevimli anime: SPY×FAMILY</p>
+
+                <p>
+                    Men Spy x Family animesini juda yaxshi ko‘raman!
+                    Ayniqsa, Anya Forger juda yoqimtoy va kulgili!
+                    💗🥜
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="avatar">🍥</div>
+                <h3>Jax</h3>
+                <p class="favorite">Sevimli anime: Naruto</p>
+
+                <p>
+                    Naruto Shippuden menga juda yoqadi!
+                    Uning orzulari uchun kurashishi va hech qachon
+                    taslim bo‘lmasligi ajoyib!
+                </p>
+            </article>
+
+            <article class="review-card">
+                <div class="avatar">💥</div>
+                <h3>Alisa</h3>
+                <p class="favorite">Sevimli anime: MHA</p>
+
+                <p>
+                    Men My Hero Academia animesini yaxshi ko‘raman!
+                    Ayniqsa, Katsuki Bakugo mening sevimli qahramonim!
+                    ❤️‍🔥
+                </p>
+            </article>
+
+        </div>
+
+        <!-- IZOHLAR QOIDALARI -->
+        <div class="rules">
+            <h3>📜 Izohlar qoidalari 🌸</h3>
+
+            <p>💗 Barchaga hurmat bilan munosabatda bo‘ling.</p>
+            <p>🚫 Haqorat va so‘kinishlardan saqlaning.</p>
+            <p>💬 Boshqalarning fikrini hurmat qiling.</p>
+            <p>✅ Qoidalarga rioya qiling!</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>🌸 Anime'lar Dunyosi! 🎌</h2>
+
+        <p>
+            Sevimli anime qahramonlaring bilan unutilmas
+            sarguzashtlarni kashf et!
+        </p>
+
+        <p class="copyright">
+            © 2026 Anime'lar Dunyosi. Barcha huquqlar himoyalangan.
+        </p>
+    </footer>
+
+    <!-- QIDIRUV UCHUN JAVASCRIPT -->
+    <script>
+        function searchAnime() {
+            const input = document
+                .getElementById("searchInput")
+                .value.trim()
+                .toLowerCase();
+
+            const cards = document.querySelectorAll(".anime-card");
+            let found = false;
+
+            cards.forEach(function(card) {
+                const text = card.innerText.toLowerCase();
+
+                if (text.includes(input)) {
+                    card.style.display = "";
+                    found = true;
+                } else {
+                    card.style.display = "none";
+                }
+            });
+
+            if (input === "") {
+                cards.forEach(card => card.style.display = "");
+                return;
+            }
+
+            if (!found) {
+                alert("Bunday anime topilmadi!");
+            }
+        }
+
+        document
+            .getElementById("searchInput")
+            .addEventListener("keydown", function(event) {
+                if (event.key === "Enter") {
+                    searchAnime();
+                }
+            });
+
+        function changeLanguage(language) {
+            if (language === "uz") {
+                return;
+            }
+
+            alert(
+                "Bu til uchun tarjima matnlarini alohida qo‘shish kerak."
+            );
+
+            document.querySelector(".language").value = "uz";
+        }
+    </script>
+
+</body>
+</html>
