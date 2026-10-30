@@ -1,0 +1,459 @@
+/* UMUMIY SOZLAMALAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8fc;
+    color: #34243b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+
+/* NAVIGATSIYA */
+
+.header {
+    width: 100%;
+    min-height: 80px;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(110, 48, 105, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a83286;
+}
+
+.navbar {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d633a6;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ead5e7;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #fff8fc;
+}
+
+.search-box input {
+    width: 150px;
+    padding: 9px 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.search-box button {
+    padding: 9px 12px;
+    border: none;
+    background: #e84ca9;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #b72c83;
+}
+
+.language {
+    padding: 8px;
+    border: 1px solid #ead5e7;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* BOSH SAHIFA */
+
+.hero {
+    min-height: 470px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(255, 255, 255, 0.75),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #f9c7e8,
+            #e6d3ff,
+            #ffd9e9
+        );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.subtitle {
+    color: #963477;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: #54254f;
+}
+
+.hero-content > p:not(.subtitle) {
+    max-width: 600px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 13px 26px;
+    background: #cf3999;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(207, 57, 153, 0.2);
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: #a52778;
+    transform: translateY(-3px);
+}
+
+
+/* ANIME BO'LIMI */
+
+.anime-section {
+    padding: 75px 6%;
+}
+
+.anime-section > h2,
+.reviews-section > h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #70275f;
+}
+
+.section-description {
+    text-align: center;
+    margin: 12px 0 35px;
+    color: #876d84;
+}
+
+.anime-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.anime-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(91, 37, 85, 0.09);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(91, 37, 85, 0.15);
+}
+
+
+/* ANIME KARTOCHKALARINING MUQOVALARI */
+
+.anime-cover {
+    min-height: 200px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.anime-cover span {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.anime-cover h3 {
+    font-size: 22px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mha {
+    background: linear-gradient(135deg, #247c8c, #41b6a6);
+}
+
+.jjk {
+    background: linear-gradient(135deg, #35264f, #8857a8);
+}
+
+.kny {
+    background: linear-gradient(135deg, #9e2c36, #ef7855);
+}
+
+.one-piece {
+    background: linear-gradient(135deg, #1768a5, #62c7e8);
+}
+
+.naruto {
+    background: linear-gradient(135deg, #e77a26, #e9b83f);
+}
+
+.spy {
+    background: linear-gradient(135deg, #316f58, #79bc96);
+}
+
+
+/* ANIME MA'LUMOTLARI */
+
+.anime-info {
+    padding: 23px;
+}
+
+.anime-info h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #70275f;
+}
+
+.anime-info > p {
+    font-size: 14px;
+    color: #6e5a6b;
+    margin-bottom: 15px;
+}
+
+.anime-info .characters {
+    font-size: 13px;
+    color: #b33887;
+    font-weight: bold;
+}
+
+.watch-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 11px;
+    background: #ed5bb2;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.watch-button:hover {
+    background: #b82c85;
+}
+
+
+/* TOMOSHABINLAR FIKRLARI */
+
+.reviews-section {
+    padding: 75px 6%;
+    background: #f9edf7;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    padding: 28px;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(91, 37, 85, 0.07);
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fbe0f1;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.review-card h3 {
+    color: #70275f;
+    margin-bottom: 5px;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: #6e5a6b;
+}
+
+.review-card .favorite {
+    color: #c23d91;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* IZOHLAR QOIDALARI */
+
+.rules {
+    max-width: 700px;
+    margin: 45px auto 0;
+    padding: 28px;
+    background: white;
+    border-radius: 16px;
+    border-left: 5px solid #df58a9;
+}
+
+.rules h3 {
+    margin-bottom: 15px;
+    color: #70275f;
+}
+
+.rules p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    padding: 45px 6%;
+    text-align: center;
+    background: #492344;
+    color: white;
+}
+
+.footer h2 {
+    margin-bottom: 12px;
+    color: #ffc4e8;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer .copyright {
+    margin-top: 25px;
+    color: #e6cce1;
+    font-size: 12px;
+}
+
+
+/* PLANSHEТ VA MOBIL TELEFONLAR */
+
+@media (max-width: 1000px) {
+    .header {
+        justify-content: center;
+    }
+
+    .anime-container,
+    .reviews-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 60px 7%;
+    }
+
+    .hero-content > p:not(.subtitle) {
+        font-size: 15px;
+    }
+
+    .anime-section,
+    .reviews-section {
+        padding: 50px 5%;
+    }
+
+    .anime-section > h2,
+    .reviews-section > h2 {
+        font-size: 25px;
+    }
+
+    .anime-container,
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .anime-cover {
+        min-height: 180px;
+    }
+
+    .search-box input {
+        width: 130px;
+    }
+}
